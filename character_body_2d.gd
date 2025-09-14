@@ -1,12 +1,30 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 var facing = "right"
-
 @export var SPEED = 300.0
 @export var JUMP_VELOCITY = -400.0
 
+var jump_mem = 0
 
 func _physics_process(delta: float) -> void:
+	if Global.dead == true:
+		position = Vector2(0,0)
+		Global.dead = false
+		
+	##jump memory
+	print(jump_mem)
+	if not is_on_floor() and Input.is_action_just_pressed("jump"):
+		jump_mem = 6
+
+	if jump_mem > 0 and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+		jump_mem = 0
+	
+	if jump_mem > 0:
+		jump_mem -= 1
+
+
+
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += 600 * delta
@@ -43,3 +61,7 @@ func _physics_process(delta: float) -> void:
 			animated_sprite_2d.play("right idle")
 		if facing == "left":
 			animated_sprite_2d.play("left idle")
+
+
+func _on_deathbox_body_entered(body: Node2D) -> void:
+	Global.dead = true
