@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="simple platformer"
-run/main_scene="uid://cxqjxny16rv6y"
+run/main_scene="uid://c105fg1hkqown"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
@@ -64,4 +64,4 @@ dash={
 [rendering]
 
 renderer/rendering_method="mobile"
-environment/defaults/default_clear_color=Color(0.220091, 0.920639, 1, 1)
+environment/defaults/default_clear_color=Color(0.3882353, 0.60784316, 1, 1)
