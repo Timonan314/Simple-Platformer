@@ -3,7 +3,7 @@ extends AnimatedSprite2D
 @export var  ID = 1
 
 var IDa = 1
-var spawn = {0:Vector2(1,1), 1:Vector2(1,1),2:Vector2(2,2),3:Vector2(3,3), 4:Vector2(4,4), 5:Vector2(5,5), 6:Vector2(6,6)}
+var spawn = {0:Vector2(0,0), 1:Vector2(168.0,16.0),2:Vector2(424.0,296.0),3:Vector2(752.0,232.0), 4:Vector2(912.0,232.0), 5:Vector2(1128.0,232.0), 6:Vector2(1272.0,232.0)}
 var state = "down"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

@@ -13,7 +13,7 @@ var dashed = 0
 
 func _physics_process(delta: float) -> void:
 	if Global.dead == true:
-		position = Vector2(0,0)
+		position = Global.checkpoint
 		Global.dead = false
 		
 	##jump memory

@@ -767,7 +767,7 @@ script = ExtResource("3_4d7sh")
 
 [node name="flag" type="AnimatedSprite2D" parent="Flags"]
 texture_filter = 1
-position = Vector2(22, -3)
+position = Vector2(174, 13)
 sprite_frames = SubResource("SpriteFrames_2nhjh")
 animation = &"down"
 autoplay = "down"
@@ -782,7 +782,7 @@ shape = SubResource("RectangleShape2D_bjha6")
 
 [node name="flag2" type="AnimatedSprite2D" parent="Flags"]
 texture_filter = 1
-position = Vector2(62, 5)
+position = Vector2(430, 293)
 sprite_frames = SubResource("SpriteFrames_2nhjh")
 animation = &"down"
 autoplay = "down"
@@ -798,7 +798,7 @@ shape = SubResource("RectangleShape2D_bjha6")
 
 [node name="flag3" type="AnimatedSprite2D" parent="Flags"]
 texture_filter = 1
-position = Vector2(102, 13)
+position = Vector2(758, 229)
 sprite_frames = SubResource("SpriteFrames_2nhjh")
 animation = &"down"
 autoplay = "down"
@@ -814,7 +814,7 @@ shape = SubResource("RectangleShape2D_bjha6")
 
 [node name="flag4" type="AnimatedSprite2D" parent="Flags"]
 texture_filter = 1
-position = Vector2(-18, -3)
+position = Vector2(918, 229)
 sprite_frames = SubResource("SpriteFrames_2nhjh")
 animation = &"down"
 autoplay = "down"
@@ -830,7 +830,7 @@ shape = SubResource("RectangleShape2D_bjha6")
 
 [node name="flag5" type="AnimatedSprite2D" parent="Flags"]
 texture_filter = 1
-position = Vector2(-42, -3)
+position = Vector2(1134, 229)
 sprite_frames = SubResource("SpriteFrames_2nhjh")
 animation = &"down"
 autoplay = "down"
@@ -846,7 +846,7 @@ shape = SubResource("RectangleShape2D_bjha6")
 
 [node name="flag6" type="AnimatedSprite2D" parent="Flags"]
 texture_filter = 1
-position = Vector2(-74, -11)
+position = Vector2(1278, 229)
 sprite_frames = SubResource("SpriteFrames_2nhjh")
 animation = &"down"
 autoplay = "down"
@@ -861,13 +861,14 @@ position = Vector2(12, -6.5)
 shape = SubResource("RectangleShape2D_bjha6")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(1272, 232)
 script = ExtResource("2_epypp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 texture_filter = 1
 position = Vector2(-3, -8)
 sprite_frames = SubResource("SpriteFrames_d21ai")
-animation = &"left jump"
+animation = &"right idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(-3.5, -4.5)

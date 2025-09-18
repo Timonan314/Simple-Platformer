@@ -8,5 +8,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	position.x -= 1.5
-	size.x += 1.5
+	position.x -= 0.75
+	size.x += 0.75
