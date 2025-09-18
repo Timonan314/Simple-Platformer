@@ -81,7 +81,7 @@ func _physics_process(delta: float) -> void:
 			animated_sprite_2d.play("left idle")
 
 
-func _on_deathbox_body_entered(body: Node2D) -> void:
+func _on_deathbox_body_entered(_body: Node2D) -> void:
 	Global.dead = true
 
 
