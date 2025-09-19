@@ -10,8 +10,11 @@ var dash_add = 0
 var move_add = 0
 var jump_mem = 0
 var dashed = 0
-
+var coyote = 0
+var jumped = false
+var coyoted = false
 func _physics_process(delta: float) -> void:
+	print(coyote)
 	if Global.dead == true:
 		position = Global.checkpoint
 		Global.dead = false
@@ -27,7 +30,16 @@ func _physics_process(delta: float) -> void:
 	if jump_mem > 0:
 		jump_mem -= 1
 
-
+	##coyote time
+	if coyote > 0:
+		coyote -= 1
+	if not is_on_floor() and jumped == false and coyoted == false:
+		coyote = 6
+		coyoted = true
+	if Input.is_action_just_pressed("jump") and coyote > 0:
+		coyote = 0
+		jumped = true
+		velocity.y = jump_vel
 
 	if Input.is_action_just_pressed("dash") and dashed == 0:
 		dashed = 1
@@ -36,7 +48,10 @@ func _physics_process(delta: float) -> void:
 		dash_timer.start()
 		gravity = 0
 	if is_on_floor():
+		coyote = 0
+		jumped = false
 		dashed = 0
+		coyoted = false
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -44,6 +59,7 @@ func _physics_process(delta: float) -> void:
 			dashed = 1
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		jumped = true
 		velocity.y = jump_vel
 	# Get the input direction and handle the movement/deceleration.
 	var direction := Input.get_axis("left", "right")
