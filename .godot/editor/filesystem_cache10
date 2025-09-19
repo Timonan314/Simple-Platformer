@@ -1,17 +1,17 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1758283524
+::res://::1758295449
 blue.png::CompressedTexture2D/CompressedTexture2D::6295585725038954244::1757517696::1757810613::1::::<><><>0<>0<>aab5270684922ebb0c62a544e9d610c5<>res://.godot/imported/blue.png-4d748ed6429caf8afc2e9d3803eadf6e.ctex::
 button.gd::GDScript::7162345711943808005::1758074659::0::1::::<>Button<><>0<>0<><>::
 character_body_2d.gd::GDScript::5544515923664044244::1758228337::0::1::::<>CharacterBody2D<><>0<>0<><>::
 COMIC.TTF::FontFile::4456979490875773693::1758074552::1758074553::1::::<><><>0<>0<>32527c9402e21fce175b98e3265f5d39<>res://.godot/imported/COMIC.TTF-ce07abbc8babcf9a6989fd2d2a0089d9.fontdata::
 Flag-Sheet.png::CompressedTexture2D::4240024838659742319::1758028294::1758028294::1::::<><><>0<>0<>48731bae5f485b279bba511a9378c60e<>res://.godot/imported/Flag-Sheet.png-2fb03033fe7d44b4620c31cc69598ba4.ctex::
-flag.gd::GDScript::6781488407728439462::1758233404::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
+flag.gd::GDScript::6781488407728439462::1758286446::0::1::::<>AnimatedSprite2D<><>0<>0<><>::
 flags.gd::GDScript::7074997295835773719::1758212994::0::1::::<>Node<><>0<>0<><>::
 global.gd::GDScript::72328737403264023::1758225419::0::1::::<>Node<><>0<>0<><>::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6387944055194091507::1757084295::1757810613::1::::<><><>0<>0<>9dd2847dcc5b0c63a96c4fe9ca4d5aa1<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 m3x6.ttf::FontFile/FontFile::159902183805810312::1757457602::1757810613::1::::<><><>0<>0<>9ef7e149e210a8302ab22268884191ad<>res://.godot/imported/m3x6.ttf-7456b000ccaea6bcf39ea89d92f89c9d.fontdata::
 main menu.tscn::PackedScene::6651191540216129713::1758074659::0::1::::<><><>0<>0<><>::uid://cyy2fkhms68mg::::res://parrallax.png<>uid://cyk8pertwjh15::::res://parrallax.gd<>uid://b4q82iafdbvvh::::res://COMIC.TTF<>uid://dabq11jxv6mwb::::res://button.gd
-node_2d.tscn::PackedScene::6420803062422912962::1758250078::0::1::::<><><>0<>0<><>::uid://da2enerrg4xiq::::res://tileset.png<>uid://c4qej1ji2laab::::res://Sprite-0001-Sheet.png<>uid://ck82mqqnav4ay::::res://character_body_2d.gd<>uid://c72gf3uell2xv::::res://flags.gd<>uid://dglwup20h065w::::res://Sprite-0001-Sheet-expor leftt.png<>uid://csgr65hl3yltx::::res://sky.png<>uid://cjpth3sxywyq::::res://m3x6.ttf<>uid://b1n5ubuk5bhfb::::res://Flag-Sheet.png<>uid://c3vaegrxoylji::::res://flag.gd
+node_2d.tscn::PackedScene::6420803062422912962::1758284586::0::1::::<><><>0<>0<><>::uid://da2enerrg4xiq::::res://tileset.png<>uid://c4qej1ji2laab::::res://Sprite-0001-Sheet.png<>uid://ck82mqqnav4ay::::res://character_body_2d.gd<>uid://c72gf3uell2xv::::res://flags.gd<>uid://dglwup20h065w::::res://Sprite-0001-Sheet-expor leftt.png<>uid://csgr65hl3yltx::::res://sky.png<>uid://cjpth3sxywyq::::res://m3x6.ttf<>uid://b1n5ubuk5bhfb::::res://Flag-Sheet.png<>uid://c3vaegrxoylji::::res://flag.gd
 parrallax.gd::GDScript::6480048077157554678::1758228294::0::1::::<>TextureRect<><>0<>0<><>::
 parrallax.png::CompressedTexture2D::6508567505188301434::1758071942::1758071943::1::::<><><>0<>0<>54cf9ff6c679cff42ea91d0f3beeeb20<>res://.godot/imported/parrallax.png-0d22b992c43458ac14da25de08d66e6f.ctex::
 README.md::TextFile::-1::1758148226::0::1::::<><><>0<>0<><>::
