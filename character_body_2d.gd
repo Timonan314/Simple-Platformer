@@ -5,6 +5,8 @@ var facing = 1
 @export var jump_vel = -200.0
 @export var dash_vel = 200
 @onready var dash_timer: Timer = $"dash timer"
+@onready var dash_cooldown: Timer = $"dash cooldown"
+
 var gravity = 600
 var dash_add = 0
 var move_add = 0
@@ -13,8 +15,11 @@ var dashed = 0
 var coyote = 0
 var jumped = false
 var coyoted = false
+var dashable = true
+func _ready() -> void:
+	pass
+
 func _physics_process(delta: float) -> void:
-	print(coyote)
 	if Global.dead == true:
 		position = Global.checkpoint
 		Global.dead = false
@@ -42,6 +47,8 @@ func _physics_process(delta: float) -> void:
 		velocity.y = jump_vel
 
 	if Input.is_action_just_pressed("dash") and dashed == 0:
+		dashable = false
+		dash_cooldown.start()
 		dashed = 1
 		velocity.y = 0
 		dash_add = facing*dash_vel
@@ -58,7 +65,7 @@ func _physics_process(delta: float) -> void:
 		if gravity == 0:
 			dashed = 1
 	# Handle jump.
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor() and gravity == 600:
 		jumped = true
 		velocity.y = jump_vel
 	# Get the input direction and handle the movement/deceleration.
@@ -104,3 +111,7 @@ func _on_deathbox_body_entered(_body: Node2D) -> void:
 func _on_dash_timer_timeout() -> void:
 	dash_add = 0
 	gravity = 600
+
+
+func _on_dash_cooldown_timeout() -> void:
+	dashable == true
